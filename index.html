@@ -6,7 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soumya Yadav - DevOps Engineer</title>
     <style>
-       body {
+     /* Fade-in animation */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.fade-in.show {
+    opacity: 1;
+}
+
+/* Optional: Apply animation to headings or sections */
+h2, .skills ul, .experience ul {
+    transition: all 1s ease-in-out;
+    transform: translateY(20px);  /* Slide from below */
+}
+h2.show, .skills ul.show, .experience ul.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+        /* Background Gradient */
+body {
+    background: linear-gradient(to right, #1e3c72, #2a5298);  /* Blue gradient */
+    color: #fff;  /* White text for better contrast */
+}
+
+/* Header and Footer Styling */
+header, footer {
+    background: rgba(0, 0, 0, 0.7);  /* Semi-transparent dark background */
+    border-bottom: 2px solid #ffcc00;  /* Yellow border for a pop of color */
+}
+
+/* Links Styling */
+a {
+    color: #ffcc00;  /* Bright yellow links */
+    text-decoration: none;
+}
+a:hover {
+    color: #ffdd44;  /* Lighter yellow on hover */
+    text-decoration: underline;  /* Underline effect on hover */
+}
+
+        body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -156,6 +197,15 @@ input, textarea {
     function toggleDarkMode() {
         document.body.classList.toggle("dark-mode");
     }
+</script>
+<script>
+    window.addEventListener("scroll", function() {
+        document.querySelectorAll(".fade-in").forEach(el => {
+            if (el.getBoundingClientRect().top < window.innerHeight - 100) {
+                el.classList.add("show");
+            }
+        });
+    });
 </script>
 
     <body>
