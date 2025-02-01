@@ -6,7 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soumya Yadav - DevOps Engineer</title>
     <style>
-   .fade-in {
+   /* General Dark Mode Styles */
+body {
+    background-color: #121212; /* Dark background for the entire page */
+    color: #e0e0e0;  /* Light grey text for readability */
+}
+
+header, footer {
+    background: rgba(0, 0, 0, 0.8);  /* Darker header and footer */
+    color: #e0e0e0;  /* Light text */
+}
+
+/* Skills and Experience Sections Styling */
+.skills, .experience {
+    background-color: #1e1e1e;  /* Dark background for these sections */
+    border-radius: 8px;  /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Subtle shadow for depth */
+}
+
+/* Make list items stand out in dark mode */
+.skills ul, .experience ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li, .experience li {
+    padding: 10px;
+    font-size: 1.1em;
+    color: #f4f4f4;  /* Light text color for list items */
+}
+
+.skills li:hover, .experience li:hover {
+    background-color: #333333;  /* Slightly lighter hover effect */
+    color: #ffcc00;  /* Highlight text color */
+}
+
+/* Links in Dark Mode */
+a {
+    color: #ffcc00;  /* Bright yellow for links */
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ffdd44;  /* Slightly lighter yellow on hover */
+}
+
+        fade-in {
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
