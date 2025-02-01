@@ -86,19 +86,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Skills & Experience */
-.skills ul, .experience ul {
-    list-style: none;
-    padding: 0;
-}
 
-.skills li, .experience li {
-    padding: 10px;
-    font-size: 1.1em;
-    background: #e9ecef;
-    margin: 5px 0;
-    border-radius: 5px;
-}
 
 /* Contact Section */
 .contact a {
